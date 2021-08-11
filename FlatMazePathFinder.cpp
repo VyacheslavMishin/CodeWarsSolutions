@@ -156,3 +156,10 @@ int path_finder(std::string maze)
       x_coord -= x_steps[i];
       y_coord -= y_steps[i];
       
+      }
+    
+    wave_front.pop();
+  };
+  
+  return vectorized_maze.back().back().number();
+}
